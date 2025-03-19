@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Изображение произведения -->
+    <ImageView
+        android:id="@+id/bookImageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        android:src="@drawable/annakorenina" />
+
+    <!-- Название произведения -->
+    <TextView
+        android:id="@+id/bookTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Название произведения"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:paddingTop="8dp" />
+
+    <!-- Описание (автор, год и т.п.) -->
+    <TextView
+        android:id="@+id/bookDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Имя автора, год и описание"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:paddingTop="4dp"
+        android:paddingBottom="16dp" />
+
+    <!-- Кнопка для переключения на следующее произведение -->
+    <Button
+        android:id="@+id/nextBookButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Следующее"
+        android:layout_gravity="center" />
+</LinearLayout>
